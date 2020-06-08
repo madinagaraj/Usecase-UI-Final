@@ -1,0 +1,8 @@
+<h2>Library app</h2>
+
+<div *ngFor="let library of librarys">
+  <h2>{{library.libraryName}}</h2>
+  <a [routerLink]="['/librarys',library.id]"></a>
+    <a href="{{library.url}}">Click to View Books</a>
+</div>
+<a routerLink="/">Go To Home</a>
